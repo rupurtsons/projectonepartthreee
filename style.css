@@ -73,6 +73,147 @@
     animation-timing-function: linear; /* Constant speed */
     animation-iteration-count: infinite; /* Loop forever */
 }
+
+body {
+    margin:0;
+    background-color: rgb(253, 217, 248);
+
+}
+
+.content {
+    background-color: lightpink;
+    position: relative;
+    color: darkslategray;
+    width:180px;
+    height:180px;
+    padding:30px;
+    border:10px solid aliceblue;
+    margin: 50px auto;
+    font-family: 'Kalam', cursive;
+}
+
+.border {
+    background-color: lightpink;
+    color: darkslategray;
+    width:200px;
+    height:200px;
+    padding:30px;
+    border:10px solid aliceblue;
+    margin:50px;
+}
+.parent {
+    position: fixed;
+     background-color: antiquewhite;
+    color: black;
+    top: 20px;
+    left: 950px;
+    width:200px;
+    height:200px;
+    padding:30px;
+
+}
+.parenttwo {
+    position: sticky;
+     background-color: rgb(215, 250, 220);
+    color: black;
+    top: 200px;
+    left: 800px;
+    width:300px;
+    height:300px;
+    padding:30px;
+}
+
+.parentthree {
+    position: sticky;
+     background-color: rgb(255, 221, 176);
+    color: black;
+    top: 80px;
+    left: 200px;
+    width:300px;
+    height:300px;
+    padding:30px;
+}
+
+
+.parentfour {
+    position: sticky;
+     background-color: rgb(196, 224, 255);
+    color: black;
+    top: 200px;
+    left: 400px;
+    width:200px;
+    height:200px;
+    padding:30px;
+}
+
+.parentfive {
+    position: relative;
+     background-color: rgb(252, 196, 255);
+    color: black;
+    top: 20px;
+    left: 500px;
+    width: 400px;
+    height: 400px;
+    padding:30px;
+}
+
+
+.child-one { 
+    background-color: antiquewhite;
+    color: black;
+    position: static;
+}
+
+.child-two{
+    background-color: rgb(255, 209, 238);
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding:30px;
+}
+
+.child-three{
+    background-color: rgb(255, 209, 238);
+    position: absolute;
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    padding:30px
+}
+
+.child-four{
+    background-color: rgb(255, 209, 209);
+    position: relative;
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    padding:30px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-areas: 
+        "header header header"
+        ;
+}
+
+header { 
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0); /* Start and end at original position */
@@ -117,11 +258,3 @@
         transform: translate(0, 0) rotate(720deg);
     }
 }
-.font {
-  font: italic small-caps bold 12px/30px Georgia, serif;
-}
-.fontw {
-  text-decoration-line: underline;
-  text-decoration-style: dashed;  
-}
-.g {list-style-type: decimal;}
