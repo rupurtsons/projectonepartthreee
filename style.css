@@ -1,0 +1,127 @@
+ body{ 
+  background-color:aliceblue
+ }
+ p{
+            color:rgb(60, 108, 138); 
+            font-size: 10pt;
+        }
+      #mean {
+            color:rgb(95, 76, 34);
+            font-size: 20pt;
+            background:rgba(235, 235, 235, 0.44);
+      }
+      #loud {
+            color: darkred;
+            font-size: 40pt;
+            font-weight: 400;
+      }
+        .harsh {
+            color: rgb(86, 62, 0);
+            font-size: 10pt;
+            background:honeydew;
+        }
+  .spinning-image {
+    animation: rotation 4s infinite linear;
+    display: block;
+    margin: 20px auto;
+}
+.b {
+  font-style: italic;
+}
+.thick {
+  font-weight: bold;
+}
+.thicker {
+  font-weight: 1000;
+}
+.dotted{
+  border-style: dotted;
+}
+.two {
+  line-height: 1.6;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.bouncing-image {
+    width: 400px; /* Adjust image size as needed */
+    height: auto;
+    position: relative;
+    animation: bounce 1s infinite; /* Apply the animation */
+}
+
+.crazyspin {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    position: relative; /* Needed for transform positioning to work correctly */
+    animation-name: crazyspin;
+    animation-duration: 8s; /* How long one full cycle takes */
+    animation-timing-function: linear; /* Constant speed */
+    animation-iteration-count: infinite; /* Loop forever */
+}
+.crazyspintwo {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    position: relative; /* Needed for transform positioning to work correctly */
+    animation-name: crazyspin;
+    animation-duration: 8s; /* How long one full cycle takes */
+    animation-timing-function: linear; /* Constant speed */
+    animation-iteration-count: infinite; /* Loop forever */
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+        animation-timing-function: ease-in; /* Fast drop */
+    }
+    50% {
+        transform: translateY(-100px); /* Move up 100px */
+        animation-timing-function: ease-out; /* Slow rise */
+    }
+}
+@keyframes crazyspintwo {
+    0% {
+        transform: translate(0px,0px) rotate(720deg);
+    }
+    25% {
+        transform: translate(0, 1000px) rotate(540deg);
+    }
+    50% {
+        transform: translate(1000px, 1000px) rotate(360deg);
+    }
+    75% {
+        transform: translate(01000px, 0) rotate(180deg);
+    }
+    100% {
+        transform: translate(1000px, 1000px) rotate(0deg);
+    }
+}
+@keyframes crazyspin {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(1000px, 0) rotate(180deg);
+    }
+    50% {
+        transform: translate(1000px, 1000px) rotate(360deg);
+    }
+    75% {
+        transform: translate(0, 1000px) rotate(540deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(720deg);
+    }
+}
+.font {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+.fontw {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;  
+}
+.g {list-style-type: decimal;}
